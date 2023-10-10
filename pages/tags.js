@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import TagsCard from "@/components/Tags/components/TagsCard";
 
 const tags = () => {
   return (
-    <div>tags</div>
-  )
-}
+    <div>
+      <TagsCard />
+    </div>
+  );
+};
 
-export default tags
+export default tags;

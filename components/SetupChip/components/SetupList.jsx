@@ -5,8 +5,10 @@ import { Box, Flex, IconButton, Image, Text } from "@chakra-ui/react";
 const SetupList = () => {
   return (
     <Box>
-      <Text>Select Icon</Text>
-      <Flex role="group">
+      <Text fontSize="20px" fontWeight="500">
+        Select Icon
+      </Text>
+      <Box display="flex" role="group">
         {icons.map((item) => (
           <IconButton
             w="auto"
@@ -15,7 +17,7 @@ const SetupList = () => {
             icon={<Image w="50px" h="50px" src={item.image} />}
           ></IconButton>
         ))}
-      </Flex>
+      </Box>
     </Box>
   );
 };
