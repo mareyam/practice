@@ -1,0 +1,88 @@
+const chips = [
+  {
+    id: 1,
+    name: "Chip 1",
+    price: 10.99,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 2,
+    name: "Chip 2",
+    price: 19.99,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 3,
+    name: "Chip 3",
+    price: 5.49,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 4,
+    name: "Chip 4",
+    price: 15.29,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 5,
+    name: "Chip 5",
+    price: 10.99,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 6,
+    name: "Chip 6",
+    price: 19.99,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 7,
+    name: "Chip 7",
+    price: 5.49,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 8,
+    name: "Chip 8",
+    price: 15.29,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 9,
+    name: "Chip 9",
+    price: 10.99,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 10,
+    name: "Chip 10",
+    price: 19.99,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 11,
+    name: "Chip 11",
+    price: 5.49,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "",
+  },
+  {
+    id: 12,
+    name: "Chip 12",
+    price: 15.29,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "",
+  },
+];
+
+export default chips;
