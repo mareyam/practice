@@ -127,7 +127,8 @@ const CheckoutForm = () => {
         <Box border="1px solid blue" p="2" borderRadius="10px">
           <Tabs position="relative" variant="unstyled">
             <TabList justifyContent="space-between" w="100%">
-              <Button
+              <Tab
+                as="Button"
                 onClick={() => PaymentToggleButton("Card")}
                 // onClick={PaymentToggleButton}
                 py="2"
@@ -137,8 +138,9 @@ const CheckoutForm = () => {
                 w="100%"
               >
                 Card
-              </Button>
-              <Button
+              </Tab>
+              <Tab
+                as="Button"
                 onClick={() => PaymentToggleButton("Bank")}
                 py="2"
                 bgColor={payment === "Bank" ? "black" : "initial"}
@@ -147,7 +149,7 @@ const CheckoutForm = () => {
                 w="100%"
               >
                 Bank
-              </Button>
+              </Tab>
             </TabList>
             <TabIndicator
               mt="-1.5px"
@@ -156,7 +158,7 @@ const CheckoutForm = () => {
               borderRadius="1px"
             />
             <TabPanels>
-              <TabPanel>
+              <TabPanel border="2px solid red">
                 <Input
                   placeholder="Card number"
                   type="text"
@@ -171,7 +173,7 @@ const CheckoutForm = () => {
                 )}
               </TabPanel>
               <TabPanel>
-                <SimpleGrid columns={{ base: 2, md: 3 }}>
+                <SimpleGrid columns={{ base: 2, md: 3 }} border="2px solid red">
                   <Button>Chase</Button>
                   <Button>America</Button>
                   <Button>Wells</Button>
