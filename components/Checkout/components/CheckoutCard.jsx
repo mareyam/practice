@@ -6,7 +6,7 @@ import { Box, SimpleGrid } from "@chakra-ui/react";
 const CheckoutCard = () => {
   return (
     <SimpleGrid mx="5" columns={{ base: 1, md: 2 }} w="100vw">
-      <Box width="100%">
+      <Box width="80%">
         <CheckoutForm />
       </Box>
       <Box width="100%">
