@@ -9,7 +9,7 @@ const CheckoutCard = () => {
       <Box width="80%">
         <CheckoutForm />
       </Box>
-      <Box width="100%">
+      <Box width="50%">
         <Billing />
       </Box>
     </SimpleGrid>

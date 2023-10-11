@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {
   Box,
+  HStack,
+  VStack,
   Input,
   FormControl,
   FormLabel,
@@ -11,6 +13,9 @@ import {
   TabList,
   TabPanels,
   Tab,
+  Image,
+  PinInput,
+  PinInputField,
   TabPanel,
   TabIndicator,
   SimpleGrid,
@@ -151,35 +156,38 @@ const CheckoutForm = () => {
                 Bank
               </Tab>
             </TabList>
-            <TabIndicator
+            {/* <TabIndicator
               mt="-1.5px"
               height="2px"
               bg="blue.500"
               borderRadius="1px"
-            />
+            /> */}
             <TabPanels>
-              <TabPanel border="2px solid red">
-                <Input
-                  placeholder="Card number"
-                  type="text"
-                  value={fullName}
-                  border="none"
-                  onChange={handleFullNameChange}
-                />
-                {!isFullNameError ? (
-                  <FormHelperText>Enter your card number.</FormHelperText>
-                ) : (
-                  <FormErrorMessage>Card number is required.</FormErrorMessage>
-                )}
+              <TabPanel>
+                <HStack>
+                  <PinInput>
+                    {Array.from({ length: 16 }).map((_, index) => (
+                      <PinInputField key={index} />
+                    ))}
+                  </PinInput>
+                </HStack>
               </TabPanel>
               <TabPanel>
-                <SimpleGrid columns={{ base: 2, md: 3 }} border="2px solid red">
-                  <Button>Chase</Button>
-                  <Button>America</Button>
-                  <Button>Wells</Button>
-                  <Button>Citi</Button>
-                  <Button>Bank</Button>
-                  <Button>Capital</Button>
+                <SimpleGrid columns={{ base: 2, md: 3 }}>
+                  {list.map((item) => (
+                    <Button
+                      m="2"
+                      bgColor="white"
+                      borderWidth="1px"
+                      borderColor="gray.200"
+                      borderRadius="md"
+                    >
+                      <HStack spacing="2">
+                        <Image src={item.img} w="50px" h="40px" />
+                        {item.name}
+                      </HStack>
+                    </Button>
+                  ))}
                 </SimpleGrid>
               </TabPanel>
             </TabPanels>
@@ -191,3 +199,34 @@ const CheckoutForm = () => {
 };
 
 export default CheckoutForm;
+
+const list = [
+  {
+    img: "/img1.png",
+    name: "westpac",
+  },
+
+  {
+    img: "/img2.png",
+    name: "chase",
+  },
+
+  {
+    img: "/img3.png",
+    name: "mastercard",
+  },
+  {
+    img: "/img1.png",
+    name: "Chase",
+  },
+
+  {
+    img: "/img2.png",
+    name: "Bank",
+  },
+
+  {
+    img: "/img3.png",
+    name: "Bank",
+  },
+];

@@ -1,9 +1,13 @@
-import React from 'react'
+import { Box } from "@chakra-ui/react";
+import React from "react";
+import Table from "@/components/Dashboard/components/Table";
 
 const tables = () => {
   return (
-    <div>tables</div>
-  )
-}
+    <Box>
+      <Table />
+    </Box>
+  );
+};
 
-export default tables
+export default tables;

@@ -13,7 +13,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 
 const Header = () => {
   return (
-    <Container minW="100%" mt="5">
+    <Box w="85vw" mt="5">
       <HStack mx="5" justifyContent="space-between" my="5">
         <Heading fontWeight="500">Dashboard</Heading>
         <HStack>
@@ -33,7 +33,7 @@ const Header = () => {
         </HStack>
       </HStack>
       <Divider />
-    </Container>
+    </Box>
   );
 };
 
