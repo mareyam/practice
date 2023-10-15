@@ -1,0 +1,88 @@
+const Tables = [
+  {
+    id: 1,
+    name: "Table 1",
+    taps: 200,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 2,
+    name: "Table 2",
+    taps: 19,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 3,
+    name: "Table 3",
+    taps: 5,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 4,
+    name: "Table 4",
+    taps: 15,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 5,
+    name: "Table 5",
+    taps: 99,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 6,
+    name: "Table 6",
+    taps: 19,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 7,
+    name: "Table 7",
+    taps: 49,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 8,
+    name: "Table 8",
+    taps: 29,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "done",
+  },
+  {
+    id: 9,
+    name: "Table 9",
+    taps: 19,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 10,
+    name: "Table 10",
+    taps: 27,
+    video: "https://www.youtube.com/embed/xS9M6zQI3AU",
+    status: "done",
+  },
+  {
+    id: 11,
+    name: "Table 11",
+    taps: 549,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "",
+  },
+  {
+    id: 12,
+    name: "Table 12",
+    taps: 159,
+    video: "https://www.youtube.com/embed/X8ghLbjjOmE",
+    status: "",
+  },
+];
+
+export default Tables;

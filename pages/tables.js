@@ -1,11 +1,11 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import Table from "@/components/Dashboard/components/Table";
+import TablesCard from "@/components/Tables/components/TablesCard";
 
 const tables = () => {
   return (
     <Box>
-      <Table />
+      <TablesCard />
     </Box>
   );
 };
