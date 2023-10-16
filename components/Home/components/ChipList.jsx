@@ -29,12 +29,13 @@ const ChipList = () => {
               px="2"
               py="1"
               w="300px"
-              border="2px solid"
+              // border="2px solid"
               spacing="10"
               justifyContent="space-between"
+              boxShadow="lg"
             >
               <HStack>
-                <Image src="/image 3.png" />
+                <Image boxSize="60px" src="/Group 8879.png" />
                 <VStack gap="0" align="left">
                   <Text fontWeight="500" fontSize="17px">
                     {item.name}

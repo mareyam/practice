@@ -12,7 +12,7 @@ import {
 const TagsCard = () => {
   return (
     <Card>
-      <CardBody border="2px solid gray">
+      <CardBody boxShadow="xl">
         <Stack mt="6" spacing="3">
           <TagsList />
         </Stack>

@@ -17,7 +17,7 @@ import ChipList from "./ChipList";
 const ChipCard = () => {
   return (
     <Card>
-      <CardBody border="2px solid gray">
+      <CardBody boxShadow="lg">
         <Stack mt="6" spacing="3">
           <ChipList />
         </Stack>

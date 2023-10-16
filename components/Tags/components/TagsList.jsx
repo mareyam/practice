@@ -19,7 +19,9 @@ const TagsList = () => {
     <div>
       <Flex justifyContent="space-between" align="center">
         <Flex justifyContent="space-between">
-          <Text fontWeight="700">Tag List ({chips.length})</Text>
+          <Text fontWeight="600" fontSize="20px">
+            Tag List ({chips.length})
+          </Text>
         </Flex>
         <AddNewTag />
       </Flex>
@@ -31,7 +33,7 @@ const TagsList = () => {
               px="2"
               py="1"
               w="300px"
-              border="2px solid"
+              boxShadow="lg"
               spacing="10"
               justifyContent="space-between"
             >

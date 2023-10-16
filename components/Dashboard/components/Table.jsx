@@ -76,7 +76,7 @@ export default function App() {
             bottom: 0,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid horizontal={true} vertical={false} />
           <XAxis dataKey="title" />
           <YAxis />
           <Tooltip />
